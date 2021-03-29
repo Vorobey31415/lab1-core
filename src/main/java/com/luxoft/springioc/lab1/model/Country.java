@@ -15,18 +15,15 @@ public class Country implements Serializable
 
     private A a;
 
-    public void setA(A a)
-    {
-        this.a = a;
+    public Country() {
     }
 
-    public A getA()
-    {
+    public A getA() {
         return a;
     }
 
-    public Country()
-    {
+    public void setA(A a) {
+        this.a = a;
     }
 
     public Country(int id, String name, String codeName)

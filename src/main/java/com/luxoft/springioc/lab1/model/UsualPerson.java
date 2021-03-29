@@ -15,6 +15,10 @@ public class UsualPerson implements Person {
 
     private List<String> contacts;
 
+    public UsualPerson(Country country) {
+        this.country = country;
+    }
+
     public void setIsProgrammer(boolean isProgrammer) {
         this.isProgrammer = isProgrammer;
     }
@@ -40,10 +44,6 @@ public class UsualPerson implements Person {
 
     public Country getCountry() {
         return country;
-    }
-
-    public void setCountry(Country country) {
-        this.country = country;
     }
 
     public boolean isProgrammer() {
